@@ -1,7 +1,7 @@
 import { writeFileSync } from 'fs';
 import { glob } from 'glob';
 
-const amount = parseInt(process.argv[2] ?? 4);
+const amount = parseInt(process.argv[2] ?? 6);
 
 const shuffle = array => {
   for (let i = array.length - 1; i > 0; i--) {

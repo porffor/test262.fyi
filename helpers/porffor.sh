@@ -1,2 +1,2 @@
 #!/bin/sh
-node ../porffor/runner/index.js "$@"
+"$1" ../porffor/runner/index.js "${@:2}"
