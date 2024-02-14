@@ -72,6 +72,9 @@ jobs:
         name: chunks
         path: chunks
 
+    - name: Fix helper file perms
+      run: chmod +x helpers/*.sh
+
     - name: Run test262 with ${{ matrix.engine }}
       run: sh ./scripts/engines/${{ matrix.engine }}.sh
 
