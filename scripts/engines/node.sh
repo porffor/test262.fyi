@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # clone repo and use node
 git clone https://github.com/CanadaHonk/porffor.git --depth 1
