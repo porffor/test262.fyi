@@ -2,12 +2,11 @@
 
 # install bun
 curl -fsSL https://bun.sh/install | bash
-source ~/.bashrc
 
 # clone repo and use bun
 git clone https://github.com/CanadaHonk/porffor.git --depth 1
 
-bun --version > version.txt
+"$HOME/.bun/bin/bun" --version > version.txt
 
 cd porffor
 npm install

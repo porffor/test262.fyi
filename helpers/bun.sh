@@ -1,2 +1,2 @@
 #!/bin/sh
-bun ../porffor/runner/index.js "$@"
+"$HOME/.bun/bin/bun" ../porffor/runner/index.js "$@"
