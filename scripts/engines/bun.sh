@@ -1,12 +1,15 @@
 #!/bin/sh
 
-# clone repo and use node
+# install bun
+curl -fsSL https://bun.sh/install | bash
+
+# clone repo and use bun
 git clone https://github.com/CanadaHonk/porffor.git --depth 1
 
-cd porffor
-git rev-parse HEAD > ../version.txt
+bun --version > version.txt
 
+cd porffor
 npm install
 cd ..
 
-./scripts/test262.sh porffor "$(pwd)/helpers/bun.sh" 12
+./scripts/test262.sh porffor "$(pwd)/helpers/bun.sh" 16

@@ -3,9 +3,10 @@
 # clone repo and use node
 git clone https://github.com/CanadaHonk/porffor.git --depth 1
 
-cd porffor
-git rev-parse HEAD > ../version.txt
+nodever="$(node --version)"
+echo "${nodever:1}" > version.txt
 
+cd porffor
 npm install
 cd ..
 

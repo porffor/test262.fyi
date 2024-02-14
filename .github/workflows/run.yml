@@ -24,7 +24,7 @@ jobs:
         cd helpers/chunkify
         npm install
         cd ../..
-        node helpers/chunkify/index.mjs 6
+        node helpers/chunkify/index.mjs 5
 
     - name: Upload chunks
       uses: actions/upload-artifact@v3
@@ -52,13 +52,13 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       CHUNKS_PATH: ../chunks/chunks.json
       CHUNK_NUMBER: ${{ matrix.chunk }}
-      CHUNK_COUNT: 6
+      CHUNK_COUNT: 5
 
     strategy:
       fail-fast: false
       matrix:
         engine: [node, bun]
-        chunk: [0, 1, 2, 3, 4, 5]
+        chunk: [0, 1, 2, 3, 4]
 
     steps:
     - uses: actions/checkout@v3
