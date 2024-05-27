@@ -57,31 +57,67 @@
       node: 'Node',
       deno: 'Deno',
       bun: 'Bun',
+
+      wasm: 'Wasm',
       native: 'Native',
+
+      o0: 'O0',
+      o1: 'O1',
+      o2: 'O2',
+
+      f64: 'f64',
+      i32: 'i32',
     };
 
     const moreInfo = {
       node: 'Porffor running on Node',
       deno: 'Porffor running on Deno',
       bun: 'Porffor running on Bun',
+
+      wasm: 'Porffor targetting Wasm (default)',
       native: 'Porffor targetting a native binary',
+
+      o0: 'Porffor running with -O0 (opt level 0)',
+      o1: 'Porffor running with -O1 (opt level 1, default)',
+      o2: 'Porffor running with -O2 (opt level 2)',
+
+      f64: 'Porffor running with f64 valtype (default)',
+      i32: 'Porffor running with i32 valtype',
     };
 
     const shortNames = {
       node: 'Node',
       deno: 'Deno',
       bun: 'Bun',
+
+      wasm: 'Wasm',
       native: 'Native',
+
+      o0: 'O0',
+      o1: 'O1',
+      o2: 'O2',
+
+      f64: 'f64',
+      i32: 'i32',
     };
 
     const categories = {
       node: 'host',
       deno: 'host',
       bun: 'host',
-      native: 'target'
+
+      wasm: 'target',
+      native: 'target',
+
+      o0: 'opt',
+      o1: 'opt',
+      o2: 'opt',
+
+      f64: 'valtype',
+      i32: 'valtype',
     };
 
-    const niceEngineOrder = [ 'node', 'deno', 'bun' ];
+    const niceEngineOrder = [ 'node', 'deno', 'bun', 'wasm', 'native', 'o0', 'o1', 'o2', 'f64', 'i32' ];
 
     const thead = document.querySelector('thead');
     const tbody = document.querySelector('tbody');
