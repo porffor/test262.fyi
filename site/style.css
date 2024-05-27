@@ -140,13 +140,24 @@ thead .stats {
   background: #68bc4a;
 }
 
+.stat-deno {
+  background: #000408;  
+}
+
 .stat-bun {
   background: #fbf0df;
   color: #000408;
 }
 
+.stat-native {
+  background: salmon;
+  color: #000408;
+}
+
 .no-stat-node #content .stat-node,
-.no-stat-bun #content .stat-bun {
+.no-stat-deno #content .stat-deno,
+.no-stat-bun #content .stat-bun,
+.no-stat-native #content .stat-native {
   width: 0 !important;
   height: 0 !important;
   overflow: hidden !important;

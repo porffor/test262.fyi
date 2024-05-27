@@ -57,7 +57,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        engine: [node, bun, deno]
+        engine: [node, bun, deno, native]
         chunk: [0, 1, 2, 3]
 
     steps:
