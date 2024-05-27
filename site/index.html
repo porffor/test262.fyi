@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>porffor.test262.fyi</title>
+  <title>test262.porffor.dev</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <meta name="description" content="deep analysis of porffor test262 results">
+  <meta name="description" content="Deep analysis of Porffor test262 results">
 </head>
 
 <body>
   <div id="sidebar">
     <div id="sidebar-contents">
-      <h1 onclick="navigate('')">test262.fyi</h1>
-      <h2>deep analysis of porffor <a href="https://github.com/tc39/test262">test262</a> results</h2>
+      <h1 onclick="navigate('')">test262.porffor.dev</h1>
+      <h2>deep analysis of Porffor <a href="https://github.com/tc39/test262">test262</a> results</h2>
 
       <hr>
 
@@ -55,25 +55,29 @@
   <script>
     const names = {
       node: 'Node',
+      deno: 'Deno',
       bun: 'Bun',
     };
 
     const moreInfo = {
       node: 'Porffor running on Node',
+      deno: 'Porffor running on Deno',
       bun: 'Porffor running on Bun',
     };
 
     const shortNames = {
       node: 'Node',
+      deno: 'Deno',
       bun: 'Bun',
     };
 
     const categories = {
       node: 'host',
+      deno: 'host',
       bun: 'host',
     };
 
-    const niceEngineOrder = [ 'node', 'bun' ];
+    const niceEngineOrder = [ 'node', 'deno', 'bun' ];
 
     const thead = document.querySelector('thead');
     const tbody = document.querySelector('tbody');
